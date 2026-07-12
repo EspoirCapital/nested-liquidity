@@ -2,6 +2,8 @@
 
 A complete guide and toolkit for the **Nested Liquidity** trading strategy — a reversal setup built around swing points hidden inside Fair Value Ggets, swept on the higher timeframe and confirmed on the lower one.
 
+Developed by [EspoirCapital](https://github.com/EspoirCapital).
+
 **Live → [nested-liquidity.vercel.app](https://nested-liquidity.vercel.app)**
 
 ---
