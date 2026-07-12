@@ -1,32 +1,57 @@
-# React + TypeScript + Vite
+# Nested Liquidity
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A complete guide and toolkit for the **Nested Liquidity** trading strategy — a reversal setup built around swing points hidden inside Fair Value Ggets, swept on the higher timeframe and confirmed on the lower one.
 
-Currently, two official plugins are available:
+**Live → [nested-liquidity.vercel.app](https://nested-liquidity.vercel.app)**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## What is this?
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This is an interactive web app that teaches you a specific ICT-based trading strategy from start to finish. It covers:
 
-## Expanding the Oxlint configuration
+- **Core Concept** — Why FVGs hide traps and how to exploit them
+- **Definitions** — Fair Value Gaps, Swing Highs/Lows, Nested Highs/Lows, Inversion FVGs, and the Validity Rule
+- **The Setup** — A 4-step process: identify the level, wait for the sweep, get LTF confirmation, enter
+- **Trade Management** — Stop loss placement and order type selection
+- **Risk & Win Rate** — The math behind expected value and how to size positions
+- **Discretionary Filters** — Death candles, reaction location, rejection wicks, and more
+- **Education** — Trading sessions, brokers, prop firms, position sizing, news events, and TradingView chart setup
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## Built-in Tools
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+| Tool | What it does |
+|------|-------------|
+| **EV Calculator** | Calculates expected value, required R:R, and trades needed to pass a funded account challenge |
+| **Position Size Calculator** | Computes lot size based on account balance, risk %, and stop loss in pips |
+| **Session Tracker** | Live Tokyo / London / New York session status with timezone conversion |
+
+## Tech Stack
+
+- React 19 + TypeScript
+- Vite
+- Chart.js (EV curve visualization)
+- Tanstack Router
+- Oxlint
+
+## Getting Started
+
+```bash
+git clone https://github.com/EspoirCapital/nested-liquidity.git
+cd nested-liquidity
+npm install
+npm run dev
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## Scripts
+
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start dev server |
+| `npm run build` | Production build |
+| `npm run preview` | Preview production build |
+| `npm run lint` | Run Oxlint |
+
+## License
+
+MIT
