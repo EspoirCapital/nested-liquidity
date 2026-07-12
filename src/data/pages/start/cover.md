@@ -20,6 +20,7 @@
           </div>
         </div>
       </div>
+      <p>Developed by <strong>EspoirCapital</strong>.</p>
       <div class="cover-meta">
         <div class="cover-stat"><div class="v">M15 / M30 / H1</div><div class="l">Level Identification</div></div>
         <div class="cover-stat"><div class="v">M2 / M3</div><div class="l">Entry Confirmation</div></div>
