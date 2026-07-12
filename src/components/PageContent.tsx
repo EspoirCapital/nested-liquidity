@@ -4,6 +4,7 @@ import type { PageData } from '../data/pages';
 import { SessionTracker } from './SessionTracker';
 import { PositionSizeCalc } from './PositionSizeCalc';
 import { EVCalculator } from './EVCalculator';
+import { LondonWindow } from './LondonWindow';
 
 interface PageContentProps {
   page: PageData;
@@ -40,6 +41,15 @@ export function PageContent({ page, pageIndex }: PageContentProps) {
       container.innerHTML = '';
       const root = createRoot(container);
       root.render(<PositionSizeCalc />);
+      roots.push({ root, container: container as HTMLElement });
+    });
+
+    // London Window
+    const lwContainers = el.querySelectorAll('.london-window');
+    lwContainers.forEach((container) => {
+      container.innerHTML = '';
+      const root = createRoot(container);
+      root.render(<LondonWindow />);
       roots.push({ root, container: container as HTMLElement });
     });
 
