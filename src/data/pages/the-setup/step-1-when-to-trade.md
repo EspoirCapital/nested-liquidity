@@ -9,6 +9,12 @@
         <strong>The rule —</strong> trade the first <strong>5 hours</strong> of the London session only.
       </div>
 
+      <div class="img-placeholder">
+        <div class="ph-icon">&#9633;</div>
+        <div class="ph-label">Chart Example</div>
+      </div>
+      <p class="img-desc">Insert strategy diagram showing trading sessions at a glance</p>
+
       <h2>Your trading window</h2>
       <p>London opens at <strong>08:00 London time</strong> and closes at <strong>17:00 London time</strong>. Your trading window is the first 5 hours of that — 08:00 to 13:00 London time. The times below are converted to your local timezone automatically.</p>
 
