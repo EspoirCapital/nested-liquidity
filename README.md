@@ -1,6 +1,6 @@
 # Nested Liquidity
 
-A complete guide and toolkit for the **Nested Liquidity** trading strategy — a reversal setup built around swing points hidden inside Fair Value Ggets, swept on the higher timeframe and confirmed on the lower one.
+A liquidity-sweep reversal framework built around swing points hidden inside Fair Value Gaps — swept on the higher timeframe, confirmed on the lower one.
 
 Developed by [EspoirCapital](https://github.com/EspoirCapital).
 
@@ -10,7 +10,7 @@ Developed by [EspoirCapital](https://github.com/EspoirCapital).
 
 ## What is this?
 
-This is an interactive web app that teaches you a specific ICT-based trading strategy from start to finish. It covers:
+This is an interactive web app that teaches you the **Nested Liquidity** ICT-adjacent reversal framework from start to finish. It covers:
 
 - **Core Concept** — Why FVGs hide traps and how to exploit them
 - **Definitions** — Fair Value Gaps, Swing Highs/Lows, Nested Highs/Lows, Inversion FVGs, and the Validity Rule
