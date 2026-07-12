@@ -3,6 +3,7 @@
       <h1>When to trade.</h1>
       <p class="lede">One session. Five hours. That's the window.</p>
       <p>This strategy trades during the <strong>London session</strong>. Gold moves with the most clean, institutional flow during London hours — LBMA fix windows, European banks, and the lead-up to the London/NY overlap all concentrate activity here.</p>
+      <p>New York is avoided — chaotic price action, news releases, and Trump mood swings make it unreliable for this setup.</p>
 
       <div class="callout">
         <strong>The rule —</strong> trade the first <strong>5 hours</strong> of the London session only.
