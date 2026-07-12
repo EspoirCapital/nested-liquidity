@@ -46,23 +46,28 @@
   },
   {
     "group": "The Setup",
-    "title": "Step 1 — Identify the Level",
-    "file": "step-1-identify-the-level"
+    "title": "Step 1 — When to Trade",
+    "file": "step-1-when-to-trade"
   },
   {
     "group": "The Setup",
-    "title": "Step 2 — Wait for the Sweep",
-    "file": "step-2-wait-for-the-sweep"
+    "title": "Step 2 — Identify the Level",
+    "file": "step-2-identify-the-level"
   },
   {
     "group": "The Setup",
-    "title": "Step 3 — LTF Confirmation",
-    "file": "step-3-ltf-confirmation"
+    "title": "Step 3 — Wait for the Sweep",
+    "file": "step-3-wait-for-the-sweep"
   },
   {
     "group": "The Setup",
-    "title": "Step 4 — Entry",
-    "file": "step-4-entry"
+    "title": "Step 4 — LTF Confirmation",
+    "file": "step-4-ltf-confirmation"
+  },
+  {
+    "group": "The Setup",
+    "title": "Step 5 — Entry",
+    "file": "step-5-entry"
   },
   {
     "group": "The Setup",

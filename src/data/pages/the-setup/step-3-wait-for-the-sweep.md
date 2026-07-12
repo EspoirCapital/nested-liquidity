@@ -1,5 +1,5 @@
 <div class="page">
-      <div class="page-kicker">03 — The Setup · Step 2</div>
+      <div class="page-kicker">03 — The Setup · Step 3</div>
       <h1>Wait for Price to Reach the Level</h1>
       <p>Let price return to and sweep the NH or NL — this is your liquidity grab, the first signal that a reversal may be forming.</p>
       <div class="img-placeholder">

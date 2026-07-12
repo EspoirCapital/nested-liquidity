@@ -1,5 +1,5 @@
 <div class="page">
-      <div class="page-kicker">03 — The Setup · Step 4</div>
+      <div class="page-kicker">03 — The Setup · Step 5</div>
       <h1>Entry</h1>
       <p>Enter on confirmation of the IFVG inversion, using it as your trigger that the sweep is genuine and the reversal is underway.</p>
       <div class="img-placeholder">

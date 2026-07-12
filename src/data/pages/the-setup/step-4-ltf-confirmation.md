@@ -1,5 +1,5 @@
 <div class="page">
-      <div class="page-kicker">03 — The Setup · Step 3</div>
+      <div class="page-kicker">03 — The Setup · Step 4</div>
       <h1>Drop to LTF for Confirmation</h1>
       <p class="lede">Lower timeframe: M2 or M3.</p>
       <p>Once the sweep occurs, shift down to M2 or M3 and watch for <strong>Inversion Fair Value Gaps (IFVGs)</strong> — see the <a href="#" onclick="event.preventDefault(); return false;" style="color:var(--accent);">IFVG definition</a> for a full breakdown.</p>
