@@ -26,11 +26,7 @@
         </table>
       </div>
 
-      <p>The tracker below converts this window to your local time automatically. It accounts for DST — the time shown is always correct for today.</p>
-
-      <div class="lt-window" id="ltWindow">
-        <div class="lt-loading">Calculating your window…</div>
-      </div>
+      <p>Use the <strong>Session Tracker</strong> on the <a href="#" onclick="event.preventDefault(); return false;" style="color:var(--accent);">Trading Sessions</a> page to convert these UTC times to your local timezone — it accounts for DST automatically.</p>
 
       <div class="callout">
         <strong>Why only London?</strong> — Asian session (Tokyo) is thin for gold. New York brings news-driven spikes that work against clean structure. London is where institutional order flow is most consistent for this setup. One session, one edge, no distractions.
