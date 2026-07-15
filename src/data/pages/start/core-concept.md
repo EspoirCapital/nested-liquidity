@@ -6,4 +6,5 @@
       <div class="page-img">
         <img src="/images/core-concept.png" alt="Core Concept - Nested Liquidity">
       </div>
+      <p class="img-desc">A trade setup showing a sweep of a M15 swing low inside a M15 FVG and M3 iFVG confirmation. The entry is exactly after the m3 candle close targeting 1:1RR</p>
     </div>
