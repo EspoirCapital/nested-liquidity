@@ -272,6 +272,46 @@
     height: auto;
     border: 1px solid var(--line);
     border-radius: 4px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+  }
+  .page-img img:hover{ opacity: 0.85; }
+
+  .lightbox-overlay{
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 20px;
+  }
+  .lightbox-close{
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 32px;
+    cursor: pointer;
+    z-index: 1001;
+    line-height: 1;
+    padding: 8px;
+  }
+  .lightbox-content{
+    max-width: 90vw;
+    max-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .lightbox-content img{
+    max-width: 100%;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 4px;
   }
 
   .signal{
@@ -622,6 +662,8 @@
     .page-footer-nav{ padding:12px 16px; }
     .cover-meta{ display: grid; grid-template-columns: 1fr 1fr; gap: 20px; justify-items: center; max-width: 320px; margin-left: auto; margin-right: auto; }
     .cover-stat{ text-align: center; width: 100%; }
+    .lightbox-close{ font-size: 40px; top: 12px; right: 12px; }
+    .lightbox-content{ max-width: 95vw; max-height: 85vh; }
   }
 
   /* ─── Session Tracker ──────────────────────────────────────────────────── */

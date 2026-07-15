@@ -1,10 +1,11 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import type { PageData } from '../data/pages';
 import { SessionTracker } from './SessionTracker';
 import { PositionSizeCalc } from './PositionSizeCalc';
 import { EVCalculator } from './EVCalculator';
 import { LondonWindow } from './LondonWindow';
+import { Lightbox } from './Lightbox';
 
 interface PageContentProps {
   page: PageData;
@@ -13,6 +14,8 @@ interface PageContentProps {
 
 export function PageContent({ page, pageIndex }: PageContentProps) {
   const wrapperRef = useRef<HTMLDivElement>(null);
+  const [lightboxSrc, setLightboxSrc] = useState<string | null>(null);
+  const [lightboxAlt, setLightboxAlt] = useState<string>('');
 
   // EV Calculator renders its own full content (no wrapper class in HTML)
   const isEVPage = page.html.includes('ev-rrChart');
@@ -72,6 +75,24 @@ export function PageContent({ page, pageIndex }: PageContentProps) {
     };
   }, [pageIndex, isEVPage]);
 
+  // Lightbox: event delegation on wrapper for image clicks
+  useEffect(() => {
+    if (isEVPage) return;
+    const el = wrapperRef.current;
+    if (!el) return;
+
+    const handler = (e: MouseEvent) => {
+      const target = e.target as HTMLElement;
+      if (target.tagName === 'IMG' && target.closest('.page-img')) {
+        const img = target as HTMLImageElement;
+        setLightboxSrc(img.src);
+        setLightboxAlt(img.alt || '');
+      }
+    };
+    el.addEventListener('click', handler);
+    return () => el.removeEventListener('click', handler);
+  }, [pageIndex, isEVPage]);
+
   if (isEVPage) {
     return <EVCalculator />;
   }
@@ -84,10 +105,19 @@ export function PageContent({ page, pageIndex }: PageContentProps) {
   );
 
   return (
-    <div
-      key={pageIndex}
-      ref={wrapperRef}
-      dangerouslySetInnerHTML={{ __html: html }}
-    />
+    <>
+      <div
+        key={pageIndex}
+        ref={wrapperRef}
+        dangerouslySetInnerHTML={{ __html: html }}
+      />
+      {lightboxSrc && (
+        <Lightbox
+          src={lightboxSrc}
+          alt={lightboxAlt}
+          onClose={() => setLightboxSrc(null)}
+        />
+      )}
+    </>
   );
 }
