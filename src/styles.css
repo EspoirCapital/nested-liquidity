@@ -575,6 +575,7 @@
     .content-scroll{ padding:24px 20px 90px; }
     .page-footer-nav{ padding:12px 16px; }
     .cover-meta{ justify-content: center; }
+    .cover-stat{ text-align: center; }
   }
 
   /* ─── Session Tracker ──────────────────────────────────────────────────── */
