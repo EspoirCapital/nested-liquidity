@@ -27,9 +27,5 @@
         <div class="cover-stat"><div class="v">1 – 1.5 RR</div><div class="l">Target Risk:Reward</div></div>
         <div class="cover-stat"><div class="v">60 – 85%</div><div class="l">Win Rate Range</div></div>
       </div>
-      <div class="img-placeholder">
-        <div class="ph-icon">&#9633;</div>
-        <div class="ph-label">Cover Art</div>
-      </div>
-      <p class="img-desc">Insert strategy diagram showing Nested Liquidity concept at a glance</p>
+
     </div>

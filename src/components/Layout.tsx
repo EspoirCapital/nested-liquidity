@@ -21,7 +21,7 @@ export function Layout() {
   // Initial page load from URL
   useEffect(() => {
     setCurrent(parsePath());
-  }, []);
+  }, [parsePath]);
 
   // Listen for back/forward navigation
   useEffect(() => {

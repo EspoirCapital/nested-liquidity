@@ -88,12 +88,13 @@
   }
   .toc-item.active .num{ color: var(--accent); }
 
-  .main{ flex: 1; display:flex; flex-direction: column; min-width: 0; max-height: 100vh; overflow-y: auto; }
+  .main{ flex: 1; display:flex; flex-direction: column; min-width: 0; height: 100vh; }
   .content-scroll{
     flex:1;
     display:flex;
     justify-content:center;
     padding: 80px 48px 90px;
+    overflow-y: auto;
   }
   .page{ max-width: 620px; width: 100%; display:none; }
   .page.active{ display:block; }
@@ -124,7 +125,7 @@
   .page ul, .page ol{ margin: 0 0 18px 22px; color: var(--ink-soft); }
   .page li{ margin-bottom: 8px; }
 
-  .page.cover.active{ display:flex; flex-direction: column; justify-content:center; min-height: calc(100vh - 140px); }
+  .page.cover.active{ display:flex; flex-direction: column; justify-content:center; min-height: 100%; }
   .cover .page-kicker{ margin-bottom: 26px; }
   .cover h1{ font-size: 54px; line-height: 1.05; margin-bottom: 24px; }
   .cover h1 em{ font-style:normal; color: var(--accent); }

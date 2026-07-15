@@ -15,11 +15,10 @@ export function PageContent({ page, pageIndex }: PageContentProps) {
   const wrapperRef = useRef<HTMLDivElement>(null);
 
   // EV Calculator renders its own full content (no wrapper class in HTML)
-  if (page.html.includes('ev-rrChart')) {
-    return <EVCalculator />;
-  }
+  const isEVPage = page.html.includes('ev-rrChart');
 
   useEffect(() => {
+    if (isEVPage) return;
     const el = wrapperRef.current;
     if (!el) return;
 
@@ -71,7 +70,11 @@ export function PageContent({ page, pageIndex }: PageContentProps) {
       roots.forEach(({ root }) => root.unmount());
       handlers.forEach(({ el, handler }) => el.removeEventListener('click', handler));
     };
-  }, [pageIndex]);
+  }, [pageIndex, isEVPage]);
+
+  if (isEVPage) {
+    return <EVCalculator />;
+  }
 
   const pageId = 'page_' + (pageIndex + 1);
   // Inject `active` class and page id into the markdown's own <div class="page"> tag
