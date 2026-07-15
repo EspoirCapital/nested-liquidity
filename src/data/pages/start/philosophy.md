@@ -35,4 +35,8 @@
         <cite>Mark Douglas, Trading in the Zone</cite>
       </div>
       <p>The most important job as a trader is not to make money — it is to protect what you already have. Every decision, every entry, every exit is a question of risk first and profit second. That mindset is the difference between surviving and blowing up.</p>
+      <div class="pullquote">
+        <p>"The best traders are not the ones who make the most money when they are right. They are the ones who lose the least when they are wrong."</p>
+        <cite>Tom Hougaard, Best Loser Wins</cite>
+      </div>
     </div>
