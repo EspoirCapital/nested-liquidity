@@ -6,6 +6,11 @@
   },
   {
     "group": "Start",
+    "title": "Philosophy",
+    "file": "philosophy"
+  },
+  {
+    "group": "Start",
     "title": "Core Concept",
     "file": "core-concept"
   },
