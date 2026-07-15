@@ -13,5 +13,5 @@
       <div class="page-img">
         <img src="/images/not-valid-nl.png" alt="Invalid Nested Low - body closed below the FVG">
       </div>
-      <p class="img-desc">Invalid NL — the body closed below the bullish FVG, consuming the imbalance. The level is no longer valid.</p>
+      <p class="img-desc">Invalid NL — the body closed below the bullish FVG, consuming the imbalance</p>
     </div>

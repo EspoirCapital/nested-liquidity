@@ -13,5 +13,5 @@
       <div class="page-img">
         <img src="/images/not-valid-nh.png" alt="Invalid Nested High - body closed above the FVG">
       </div>
-      <p class="img-desc">Invalid NH — the body closed above the bearish FVG, consuming the imbalance. The level is no longer valid.</p>
+      <p class="img-desc">Invalid NH — the body closed above the bearish FVG, consuming the imbalance</p>
     </div>
