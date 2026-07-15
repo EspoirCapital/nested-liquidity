@@ -18,8 +18,8 @@ export function EVCalculator() {
   const [targetPct, setTargetPct] = useState(8);
   const [dailyDD, setDailyDD] = useState(5);
   const [maxDD, setMaxDD] = useState(10);
-  const [minWR, setMinWR] = useState(60);
-  const [maxWR, setMaxWR] = useState(75);
+  const [minWR, setMinWR] = useState(67);
+  const [maxWR, setMaxWR] = useState(80);
   const [evTarget, setEvTarget] = useState(1.0);
   const [riskPct, setRiskPct] = useState(2.0);
 
@@ -229,7 +229,11 @@ export function EVCalculator() {
       <p className="lede">The single number that tells you whether a strategy is worth trading at all.</p>
       <p>Expected Value (EV) is the average result you'd expect per trade if you repeated it many times, given your win rate and your risk-reward ratio. A positive EV means the strategy makes money over a large enough sample, even though any individual trade can still lose.</p>
       <div className="callout">
-        <strong>Formula —</strong> EV = (Win Rate × Average Win) − (Loss Rate × Average Loss). Expressed against your risk per trade, this becomes EV% = (Win Rate × RR) − (Loss Rate × 1), where RR is your reward relative to 1 unit of risk.
+        <p><strong>Formula —</strong></p>
+        <p><code>EV = (Win Rate × Average Win) − (Loss Rate × Average Loss)</code></p>
+        <p>Expressed against your risk per trade, this becomes</p>
+        <p><code>EV% = (Win Rate × RR) − (Loss Rate × 1)</code></p>
+        <p>where RR is your reward relative to 1 unit of risk.</p>
       </div>
       <p>The calculator below works backward from this formula: set your account size, drawdown limits, win rate range, and target EV per trade, and it tells you the required RR to hit that target — plus how many trades it should take to pass a funded account challenge.</p>
 

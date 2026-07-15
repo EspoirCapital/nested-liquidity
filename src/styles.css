@@ -219,6 +219,14 @@
     border-radius:3px;
   }
 
+  .callout code{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:13px;
+    background:var(--panel);
+    padding:1px 6px;
+    border:1px solid var(--line);
+    border-radius:3px;
+  }
   .callout{
     background: var(--accent-soft);
     border-left: 3px solid var(--accent);

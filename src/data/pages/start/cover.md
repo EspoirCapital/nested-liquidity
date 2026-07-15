@@ -25,7 +25,7 @@
         <div class="cover-stat"><div class="v">M15 / H1 +</div><div class="l">Level Identification</div></div>
         <div class="cover-stat"><div class="v">M2 / M3</div><div class="l">Entry Confirmation</div></div>
         <div class="cover-stat"><div class="v">1 – 1.5 RR</div><div class="l">Target Risk:Reward</div></div>
-        <div class="cover-stat"><div class="v">70 – 80%</div><div class="l">Win Rate Range</div></div>
+        <div class="cover-stat"><div class="v">67 – 80%</div><div class="l">Win Rate Range</div></div>
       </div>
 
     </div>
