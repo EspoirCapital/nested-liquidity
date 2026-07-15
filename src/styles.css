@@ -263,6 +263,17 @@
     color: var(--ink-faint);
   }
 
+  .page-img{
+    margin: 24px 0;
+    text-align: center;
+  }
+  .page-img img{
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+  }
+
   .signal{
     display:inline-flex;
     align-items:center;
