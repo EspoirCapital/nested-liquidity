@@ -6,20 +6,12 @@
         <p>A swing low resting inside a Fair Value Gap, where price has <strong>not closed a candle body below</strong> the FVG.</p>
       </div>
       <p>Same wick exception applies as with the Nested High — a wick piercing through the FVG doesn't invalidate the level, only a body close does.</p>
-      <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px; margin:26px 0;">
-        <div>
-          <div class="img-placeholder" style="margin:0;">
-            <div class="ph-icon">&#9633;</div>
-            <div class="ph-label">Valid NL</div>
-          </div>
-          <p class="img-desc">Swing low sits inside the FVG. Wicks may poke through, but no candle body closed below the FVG — level is still live.</p>
-        </div>
-        <div>
-          <div class="img-placeholder" style="margin:0;">
-            <div class="ph-icon">&#9633;</div>
-            <div class="ph-label">Invalid NL</div>
-          </div>
-          <p class="img-desc">A candle body closes below the FVG, consuming the imbalance. The NL is dead — no longer a valid setup.</p>
-        </div>
+      <div class="page-img">
+        <img src="/images/valid-nl.png" alt="Valid Nested Low - swing low inside FVG with no body close below">
       </div>
+      <p class="img-desc">Valid NL — the body did not close below the bullish FVG, the level remains live</p>
+      <div class="page-img">
+        <img src="/images/not-valid-nl.png" alt="Invalid Nested Low - body closed below the FVG">
+      </div>
+      <p class="img-desc">Invalid NL — the body closed below the bullish FVG, consuming the imbalance. The level is no longer valid.</p>
     </div>
