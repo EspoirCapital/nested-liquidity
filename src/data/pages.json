@@ -36,11 +36,6 @@
   },
   {
     "group": "Definitions",
-    "title": "Validity Rule",
-    "file": "validity-rule"
-  },
-  {
-    "group": "Definitions",
     "title": "Inversion FVG (IFVG)",
     "file": "inversion-fvg-ifvg"
   },
