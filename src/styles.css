@@ -533,7 +533,7 @@
     flex-direction:column;
     padding-top:50px;
   }
-  .mobile-menu.show{ display:flex; }
+  .mobile-menu.open{ display:flex; }
   .mobile-menu-body{
     flex:1;
     overflow-y:auto;
