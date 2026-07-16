@@ -70,14 +70,9 @@
     "file": "summary-flow"
   },
   {
-    "group": "Trade Management",
-    "title": "Stop Loss & Order Type",
-    "file": "stop-loss-order-type"
-  },
-  {
     "group": "Risk & Win Rate",
-    "title": "The Numbers",
-    "file": "the-numbers"
+    "title": "Trade Management",
+    "file": "trade-management"
   },
   {
     "group": "Risk & Win Rate",
