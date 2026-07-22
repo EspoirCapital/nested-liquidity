@@ -29,11 +29,11 @@ export function LondonWindow() {
   const userOffset = -now.getTimezoneOffset() / 60;
   const dst = isDST(now, 'Europe/London');
 
-  // London 08:00–13:00 in UTC, then to user local
+  // London 08:00–12:00 in UTC, then to user local
   const summerOpenUtc = 7;
-  const summerCloseUtc = 12;
+  const summerCloseUtc = 11;
   const winterOpenUtc = 8;
-  const winterCloseUtc = 13;
+  const winterCloseUtc = 12;
 
   const openUtc = dst ? summerOpenUtc : winterOpenUtc;
   const closeUtc = dst ? summerCloseUtc : winterCloseUtc;
@@ -70,7 +70,7 @@ export function LondonWindow() {
         UTC{offStr} · {userTZ || 'detected'} · London is currently {dst ? 'BST (UTC+1)' : 'GMT (UTC+0)'}
       </div>
       <div style={{ fontSize: '12px', color: '#8a8a85', marginTop: '8px' }}>
-        5-hour window · First 5 hours of London session (08:00–13:00 London time)
+        4-hour window · First 4 hours of London session (08:00–12:00 London time)
       </div>
     </div>
   );
