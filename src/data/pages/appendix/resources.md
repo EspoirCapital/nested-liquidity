@@ -34,4 +34,8 @@
         <a href="https://x.com/nasxau" target="_blank" rel="noopener">@nasxau</a> — Anas B. &middot; Strategy design &amp; docs<br>
         <a href="https://x.com/nyd_hal" target="_blank" rel="noopener">@nyd_hal</a> — Nidhal G. &middot; Strategy validation &amp; backtesting
       </p>
+
+      <h2>Community</h2>
+      <p>Join the Discord to discuss setups, share chart analysis, and get feedback on your execution:</p>
+      <p><a href="https://discord.gg/N4RF5Kdx9" target="_blank" rel="noopener">Nested Liquidity Discord &rarr;</a></p>
     </div>

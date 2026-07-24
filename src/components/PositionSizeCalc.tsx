@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { calcRiskAmount, calcLotSize, isLotOutOfRange } from '../utils/calculators';
 
 export function PositionSizeCalc() {
   const [balance, setBalance] = useState(10000);
@@ -6,12 +7,10 @@ export function PositionSizeCalc() {
   const [slPips, setSlPips] = useState(20);
   const [pipValue, setPipValue] = useState(10);
 
-  const riskAmount = balance * (riskPct / 100);
-  const lotSize = riskAmount / (slPips * pipValue);
-  const rounded = Math.round(lotSize * 100) / 100;
+  const riskAmount = calcRiskAmount(balance, riskPct);
+  const rounded = calcLotSize(balance, riskPct, slPips, pipValue);
 
-  let outputColor: string | undefined;
-  if (rounded < 0.01 || rounded > 10) outputColor = 'var(--flag)';
+  const outputColor = isLotOutOfRange(rounded) ? 'var(--flag)' : undefined;
 
   return (
     <div className="ps-calculator">

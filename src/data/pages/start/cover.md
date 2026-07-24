@@ -4,7 +4,8 @@
       <p class="lede">A liquidity-sweep reversal strategy built around swing points hidden inside Fair Value Gaps — swept on the higher timeframe, confirmed on the lower one.</p>
       <div class="cover-authors">
         <div class="ca-card">
-          <img class="ca-avatar" src="https://unavatar.io/x/nasxau" alt="Anas B.">
+          <img class="ca-avatar" src="https://unavatar.io/x/nasxau" alt="Anas B." loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="ca-avatar-fallback" style="display:none">AB</div>
           <div class="ca-body">
             <div class="ca-name">Anas B.</div>
             <div class="ca-role">Strategy design &amp; docs</div>
@@ -12,7 +13,8 @@
           </div>
         </div>
         <div class="ca-card">
-          <img class="ca-avatar" src="https://unavatar.io/x/nyd_hal" alt="Nidhal G.">
+          <img class="ca-avatar" src="https://unavatar.io/x/nyd_hal" alt="Nidhal G." loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="ca-avatar-fallback" style="display:none">NG</div>
           <div class="ca-body">
             <div class="ca-name">Nidhal G.</div>
             <div class="ca-role">Strategy validation &amp; backtesting</div>
@@ -26,6 +28,12 @@
         <div class="cover-stat"><div class="v">M2 / M3</div><div class="l">Entry Confirmation</div></div>
         <div class="cover-stat"><div class="v">1 – 1.5 RR</div><div class="l">Target Risk:Reward</div></div>
         <div class="cover-stat"><div class="v">67 – 80%</div><div class="l">Win Rate Range</div></div>
+      </div>
+      <div class="disclaimer">
+        <strong>Disclaimer.</strong> This is an educational resource for personal study only. It is not financial advice.
+        Trading forex, commodities, and derivatives carries substantial risk of loss and is not suitable for every investor.
+        Past performance — including any win rates, expected value figures, or backtest results stated here — does not guarantee future results.
+        Always trade with capital you can afford to lose and consult a licensed financial advisor before making investment decisions.
       </div>
 
     </div>

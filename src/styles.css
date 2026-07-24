@@ -134,6 +134,14 @@
   .cover-stat{ border-top: 2px solid var(--accent); padding-top: 10px; }
   .cover-stat .v{ font-family:'Source Serif 4', serif; font-size: 22px; font-weight:700; }
   .cover-stat .l{ font-size: 11px; text-transform:uppercase; letter-spacing:0.07em; color: var(--ink-faint); margin-top:2px; }
+  .disclaimer{
+    margin-top: 48px;
+    padding: 16px 20px;
+    font-size: 12px;
+    line-height: 1.6;
+    color: var(--ink-faint);
+    border-top: 1px solid var(--line);
+  }
   .cover-authors{
     margin-top:18px;
     margin-bottom:16px;
@@ -155,6 +163,18 @@
     border-radius:50%;
     flex-shrink:0;
     object-fit:cover;
+  }
+  .ca-avatar-fallback{
+    width:40px; height:40px;
+    border-radius:50%;
+    flex-shrink:0;
+    background:var(--accent-soft);
+    color:var(--accent);
+    font-family:'IBM Plex Mono', monospace;
+    font-size:13px;
+    font-weight:600;
+    align-items:center;
+    justify-content:center;
   }
   .ca-body{ flex:1; min-width:0; }
   .ca-name{ font-weight:600; font-size:14px; line-height:1.3; }

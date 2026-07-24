@@ -2,16 +2,11 @@ import { useState, useMemo } from 'react';
 import { Chart as ChartJS, LinearScale, PointElement, LineElement, Tooltip, Filler } from 'chart.js';
 import { Line } from 'react-chartjs-2';
 import annotationPlugin from 'chartjs-plugin-annotation';
+import { sanitizeWR, calcRiskAmount, calcMaxDailyLosses, calcMaxTotalLosses, calcRR, calcTradesToPass, calcRecommendedRR, calcPerfectTrades } from '../utils/calculators';
 
 ChartJS.register(LinearScale, PointElement, LineElement, Tooltip, Filler, annotationPlugin);
 
 const moneyFmt = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', minimumFractionDigits: 0 });
-
-function sanitizeWR(min: number, max: number): { min: number; max: number } {
-  const safeMin = Math.max(1, Math.min(99, isNaN(min) ? 60 : min));
-  const safeMax = Math.max(safeMin + 1, Math.min(100, isNaN(max) ? 75 : max));
-  return { min: safeMin, max: safeMax };
-}
 
 export function EVCalculator() {
   const [accountSize, setAccountSize] = useState(50000);
@@ -28,19 +23,17 @@ export function EVCalculator() {
   const maxWRPct = safeWRs.max;
   const avgWR = (minWRPct + maxWRPct) / 2;
 
-  const currentRiskAmount = accountSize * (riskPct / 100);
-  const maxDailyLosses = Math.ceil((accountSize * (dailyDD / 100)) / currentRiskAmount);
-  const maxTotalLosses = Math.ceil((accountSize * (maxDD / 100)) / currentRiskAmount);
-  const tradesToPass = Math.ceil(Math.round((targetPct / evTarget) * 1000) / 1000);
+  const currentRiskAmount = calcRiskAmount(accountSize, riskPct);
+  const maxDailyLosses = calcMaxDailyLosses(accountSize, dailyDD, currentRiskAmount);
+  const maxTotalLosses = calcMaxTotalLosses(accountSize, maxDD, currentRiskAmount);
+  const tradesToPass = calcTradesToPass(targetPct, evTarget);
 
-  const wMin = minWRPct / 100;
-  const rrMinWR = (evTarget + riskPct * (1 - wMin)) / (wMin * riskPct);
-  const wMax = maxWRPct / 100;
-  const rrMaxWR = (evTarget + riskPct * (1 - wMax)) / (wMax * riskPct);
-  const recommendedRR = (rrMinWR + rrMaxWR) / 2;
+  const rrMinWR = calcRR(minWRPct, riskPct, evTarget);
+  const rrMaxWR = calcRR(maxWRPct, riskPct, evTarget);
+  const recommendedRR = calcRecommendedRR(minWRPct, maxWRPct, riskPct, evTarget);
   const recommendedWinPct = riskPct * recommendedRR;
   const recommendedWinDollar = accountSize * (recommendedWinPct / 100);
-  const perfectTrades = Math.ceil(Math.round((targetPct / recommendedWinPct) * 1000) / 1000);
+  const perfectTrades = calcPerfectTrades(targetPct, recommendedWinPct);
 
   const chartMinX = Math.max(0, minWRPct - 15);
   const chartMaxX = Math.min(100, maxWRPct + 15);

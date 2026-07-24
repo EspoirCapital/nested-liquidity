@@ -106,6 +106,12 @@ export function PageContent({ page, pageIndex }: PageContentProps) {
 
   return (
     <>
+      {/*
+        All HTML is build-time imported raw markdown from src/data/pages/.
+        No user-generated content, no API, no dynamic input — XSS risk is zero.
+        If this ever changes (CMS, comments, user input), switch to DOMPurify
+        or react-markdown + rehype-sanitize before rendering.
+      */}
       <div
         key={pageIndex}
         ref={wrapperRef}
