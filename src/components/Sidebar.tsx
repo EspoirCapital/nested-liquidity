@@ -27,7 +27,10 @@ export function Sidebar({ pages, current, onNavigate }: SidebarProps) {
               key={i}
               className={'toc-item' + (i === current ? ' active' : '')}
               id={'toc-' + i}
+              role="button"
+              tabIndex={0}
               onClick={() => onNavigate(i)}
+              onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onNavigate(i); } }}
             >
               <span className="num">{String(i + 1).padStart(2, '0')}</span>
               {page.title}

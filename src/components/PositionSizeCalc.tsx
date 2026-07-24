@@ -48,7 +48,7 @@ export function PositionSizeCalc() {
         <label>Pair</label>
         <select value={pipValue} onChange={e => setPipValue(parseFloat(e.target.value))}>
           <option value="10">EUR/USD, GBP/USD (major)</option>
-          <option value="10">USD/JPY, GBP/JPY (major)</option>
+          <option value="9.5">USD/JPY, GBP/JPY (JPY pair)</option>
           <option value="1">XAU/USD (Gold)</option>
           <option value="1">XAG/USD (Silver)</option>
         </select>

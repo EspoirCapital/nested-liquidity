@@ -9,8 +9,8 @@
       <h2>Propfirms vs. Brokers</h2>
       <p>For retail traders starting out, <strong>prop firms</strong> are often a better option than opening a personal broker account. Instead of depositing your own $50k, you pay a challenge fee (a few hundred dollars) to trade a simulated funded account. Pass the rules and you earn real payouts on simulated profits — same opportunity without needing to save up years of capital.</p>
       <p>Standard brokers require significant personal capital to make meaningful returns. The catch with prop firms: all trading is on demo, drawdown rules are strict, and you're trading on a leash. For traders with limited capital, prop firms provide a way to access large simulated accounts at a fraction of the cost of depositing your own funds.</p>
-      <p><button class="nav-btn" onclick="goTo(pages.findIndex(p=>p.title==='Propfirms'))" style="margin-top:6px;">Learn more about prop firms &rarr;</button>
-      <button class="nav-btn" onclick="goTo(pages.findIndex(p=>p.title==='Brokers'))" style="margin-top:6px; margin-left:8px;">Learn more about brokers &rarr;</button></p>
+      <p><a class="nav-btn" href="/education/propfirms" onclick="event.preventDefault(); history.pushState({page:0}, '', '/education/propfirms'); window.dispatchEvent(new Event('popstate'));" style="margin-top:6px;">Learn more about prop firms &rarr;</a>
+      <a class="nav-btn" href="/education/brokers" onclick="event.preventDefault(); history.pushState({page:0}, '', '/education/brokers'); window.dispatchEvent(new Event('popstate'));" style="margin-top:6px; margin-left:8px;">Learn more about brokers &rarr;</a></p>
 
       <h2>ICT Education</h2>
       <p>The 2022 ICT Mentorship series on YouTube is the definitive breakdown of FVG, IFVG, liquidity sweeps, and time-based concepts. The Nested Liquidity strategy adapts ICT's model with the NH/NL variation.</p>

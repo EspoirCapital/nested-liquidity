@@ -33,7 +33,7 @@ This is an interactive web app that teaches you the **Nested Liquidity** ICT-adj
 - React 19 + TypeScript
 - Vite
 - Chart.js (EV curve visualization)
-- Tanstack Router
+- Vitest (unit tests)
 - Oxlint
 
 ## Getting Started
@@ -51,6 +51,7 @@ npm run dev
 |---------|-------------|
 | `npm run dev` | Start dev server |
 | `npm run build` | Production build |
+| `npm run test` | Run unit tests |
 | `npm run preview` | Preview production build |
 | `npm run lint` | Run Oxlint |
 

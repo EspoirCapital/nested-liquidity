@@ -35,12 +35,6 @@ export function calcPerfectTrades(targetPct: number, recommendedWinPct: number):
   return Math.ceil(Math.round((targetPct / recommendedWinPct) * 1000) / 1000);
 }
 
-export const PIP_VALUES: Record<string, number> = {
-  majors: 10,
-  gold: 1,
-  silver: 1,
-};
-
 export function calcLotSize(balance: number, riskPct: number, slPips: number, pipValue: number): number {
   const riskAmount = calcRiskAmount(balance, riskPct);
   const lotSize = riskAmount / (slPips * pipValue);

@@ -598,6 +598,7 @@
     padding:6px 10px;
     line-height:1;
   }
+  .mobile-topbar .mt-brand .brand-n{ color:var(--ink); }
   .mobile-topbar .mt-brand .brand-l{ color:var(--accent); }
   .mobile-topbar .mt-center{
     font-size:13px;
@@ -653,26 +654,6 @@
     letter-spacing:0.08em;
     color:var(--ink-faint);
   }
-  .mm-item{
-    display:flex;
-    align-items:center;
-    gap:12px;
-    padding:12px 20px;
-    cursor:pointer;
-    color:var(--ink-soft);
-    text-decoration:none;
-    transition:background 0.1s;
-  }
-  .mm-item:hover{ background:var(--accent-soft); color:var(--ink); }
-  .mm-item.active{ color:var(--ink); background:var(--accent-soft); }
-  .mm-item .mm-num{
-    font-family:'IBM Plex Mono', monospace;
-    font-size:11px;
-    color:var(--ink-faint);
-    width:24px;
-    flex-shrink:0;
-  }
-  .mm-item.active .mm-num{ color:var(--accent); }
 
   @media (max-width: 860px){
     .mobile-topbar{ display:flex; }

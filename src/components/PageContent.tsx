@@ -59,7 +59,7 @@ export function PageContent({ page, pageIndex }: PageContentProps) {
     const handlers: Array<{ el: HTMLElement; handler: () => void }> = [];
     el.querySelectorAll<HTMLElement>('.clr-copy').forEach((btn) => {
       const handler = () => {
-        const color = btn.getAttribute('data-clr') || btn.textContent || '';
+        const color = btn.getAttribute('data-copy') || btn.textContent || '';
         navigator.clipboard.writeText(color.trim().toLowerCase()).catch(() => {});
         const orig = btn.innerHTML;
         btn.innerHTML = 'Copied!';

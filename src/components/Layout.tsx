@@ -45,6 +45,8 @@ export function Layout() {
   // Keyboard navigation
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
+      const tag = (e.target as HTMLElement).tagName;
+      if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') return;
       if (e.key === 'ArrowRight') goTo(current + 1);
       if (e.key === 'ArrowLeft') goTo(current - 1);
       if (e.key === 'Escape') setMenuOpen(false);
